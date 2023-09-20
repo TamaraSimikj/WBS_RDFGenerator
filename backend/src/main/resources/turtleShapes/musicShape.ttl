@@ -1,0 +1,40 @@
+@prefix ex: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:MusicShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Music ;
+    sh:property [
+        sh:path ex:title ;
+        sh:minCount 1 ;
+        sh:message "Music must have a title." ;
+    ] ;
+    sh:property [
+        sh:path ex:artist ;
+        sh:minCount 1 ;
+        sh:message "Music must have an artist." ;
+    ] ;
+    sh:property [
+        sh:path ex:musicGenre ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path ex:album ;
+        sh:nodeKind sh:IRI ;
+        sh:message "Music must be associated with an album." ;
+    ] ;
+    sh:property [
+        sh:path ex:releaseDate ;
+        sh:datatype xsd:date ;
+    ] ;
+    sh:property [
+        sh:path ex:duration ;
+        sh:datatype xsd:duration ;
+    ] ;
+    sh:property [
+        sh:path ex:trackNumber ;
+        sh:datatype xsd:integer ;
+    ] .

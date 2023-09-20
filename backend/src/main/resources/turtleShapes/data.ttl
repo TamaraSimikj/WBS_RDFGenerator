@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Person1
+    rdf:type ex:Person ;
+    ex:firstName "John" ;
+    ex:lastName "Doe" ;
+    ex:dateOfBirth "1990-05-15"^^xsd:date ;
+    ex:email "john.doe@example.com" .
+
+ex:Person2
+    rdf:type ex:Person ;
+    ex:firstName "Jane" ;
+    ex:lastName "Smith" ;
+    ex:dateOfBirth "1985-08-23"^^xsd:date ;
+    ex:email "jane.smith@example.com" .
+
+ex:Person3
+    rdf:type ex:Person ;
+    ex:firstName "Alice" ;
+    ex:lastName "Johnson" ;
+    ex:dateOfBirth "1977-03-10"^^xsd:date ;
+    ex:email "alice.johnson@example.com" .

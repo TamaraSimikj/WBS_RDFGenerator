@@ -1,0 +1,37 @@
+@prefix ex: <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:PersonNodeShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Person ;
+    sh:property [
+        sh:path ex:firstName ;
+        sh:minCount 1 ;
+        sh:message "First name is required." ;
+        sh:nodeKind sh:IRIOrLiteral ;
+    ] ;
+    sh:property [
+        sh:path ex:lastName ;
+        sh:minCount 1 ;
+        sh:maxCount 2 ;
+        sh:message "Last name is required." ;
+    ] ;
+    sh:property [
+        sh:path ex:dateOfBirth ;
+        sh:datatype xsd:date ;
+        sh:message "Date of birth must be in xsd:date format." ;
+    ] ;
+    sh:property [
+            sh:path ex:Address ;
+        ] .
+
+ex:PersonShape
+      a sh:NodeShape ;
+      sh:targetNode ex:Alice ;
+      sh:property [
+                  sh:path ex:Address ;
+              ] .
+
+
+

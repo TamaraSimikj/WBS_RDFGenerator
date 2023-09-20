@@ -1,0 +1,260 @@
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "itaque" ;
+        <http://example.org/productName>
+                "shay jones" ;
+        <http://example.org/productPrice>
+                661.21 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "consectetur" ;
+        <http://example.org/productName>
+                "winston botsford" ;
+        <http://example.org/productPrice>
+                966.47 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "atque" ;
+        <http://example.org/productDescription>
+                "ipsam" ;
+        <http://example.org/productName>
+                "jarvis lind" ;
+        <http://example.org/productPrice>
+                785.98 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "repellat" ;
+        <http://example.org/productDescription>
+                "et" ;
+        <http://example.org/productName>
+                "joella hudson" ;
+        <http://example.org/productPrice>
+                300.68 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "earum" ;
+        <http://example.org/productName>
+                "geneva bogan" ;
+        <http://example.org/productPrice>
+                59.25 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "facere" ;
+        <http://example.org/productDescription>
+                "necessitatibus" ;
+        <http://example.org/productName>
+                "clarine collins" ;
+        <http://example.org/productPrice>
+                904.28 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "odit" ;
+        <http://example.org/productName>
+                "christine conroy" ;
+        <http://example.org/productPrice>
+                61.3 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "error" ;
+        <http://example.org/productDescription>
+                "quam" ;
+        <http://example.org/productName>
+                "theola kirlin" ;
+        <http://example.org/productPrice>
+                39.76 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "cum" ;
+        <http://example.org/productDescription>
+                "provident" ;
+        <http://example.org/productName>
+                "rodrigo jacobi" ;
+        <http://example.org/productPrice>
+                61.95 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "sequi" ;
+        <http://example.org/productDescription>
+                "sed" ;
+        <http://example.org/productName>
+                "dolores fisher" ;
+        <http://example.org/productPrice>
+                955.12 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "nihil" ;
+        <http://example.org/productDescription>
+                "velit" ;
+        <http://example.org/productName>
+                "alease bode" ;
+        <http://example.org/productPrice>
+                614.67 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "et" ;
+        <http://example.org/productDescription>
+                "ipsum" ;
+        <http://example.org/productName>
+                "rudy collins" ;
+        <http://example.org/productPrice>
+                144.83 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "in" ;
+        <http://example.org/productName>
+                "matt gaylord" ;
+        <http://example.org/productPrice>
+                906.61 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "natus" ;
+        <http://example.org/productDescription>
+                "voluptatem" ;
+        <http://example.org/productName>
+                "jimmy hyatt" ;
+        <http://example.org/productPrice>
+                167.15 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "sapiente" ;
+        <http://example.org/productDescription>
+                "dolores" ;
+        <http://example.org/productName>
+                "irwin konopelski" ;
+        <http://example.org/productPrice>
+                728.15 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "enim" ;
+        <http://example.org/productDescription>
+                "necessitatibus" ;
+        <http://example.org/productName>
+                "vincenzo heathcote" ;
+        <http://example.org/productPrice>
+                932.96 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "aperiam" ;
+        <http://example.org/productName>
+                "domingo lindgren" ;
+        <http://example.org/productPrice>
+                314.93 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "qui" ;
+        <http://example.org/productDescription>
+                "perspiciatis" ;
+        <http://example.org/productName>
+                "nida deckow" ;
+        <http://example.org/productPrice>
+                866.96 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "tempora" ;
+        <http://example.org/productName>
+                "ima goodwin" ;
+        <http://example.org/productPrice>
+                401.25 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "itaque" ;
+        <http://example.org/productDescription>
+                "sit" ;
+        <http://example.org/productName>
+                "lawana little" ;
+        <http://example.org/productPrice>
+                428.69 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "error" ;
+        <http://example.org/productDescription>
+                "in" ;
+        <http://example.org/productName>
+                "retta will" ;
+        <http://example.org/productPrice>
+                21.06 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                true ;
+        <http://example.org/productCategory>
+                "accusantium" ;
+        <http://example.org/productDescription>
+                "quisquam" ;
+        <http://example.org/productName>
+                "beatris kub" ;
+        <http://example.org/productPrice>
+                827.02 .
+<http://example.org/ProductResource>
+        a       <http://example.org/Product> ;
+        <http://example.org/productAvailable>
+                false ;
+        <http://example.org/productCategory>
+                "adipisci" ;
+        <http://example.org/productName>
+                "phillip parker" ;
+        <http://example.org/productPrice>
+                323.28 .

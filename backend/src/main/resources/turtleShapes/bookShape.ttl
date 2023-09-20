@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:BookShape
+    a sh:NodeShape ;
+    sh:targetClass ex:Book ;
+    sh:property [
+        sh:path ex:title ;
+        sh:minCount 1 ;
+        sh:message "Title is required." ;
+    ] ;
+    sh:property [
+        sh:path ex:author ;
+        sh:minCount 1 ;
+        sh:message "Author is required." ;
+    ] ;
+    sh:property [
+        sh:path ex:date ;
+        sh:datatype xsd:date ;
+        sh:message "Date must be in xsd:date format." ;
+    ] ;
+    sh:property [
+        sh:path ex:genre ;
+        sh:minCount 1 ;
+        sh:message "Genre is required." ;
+    ] ;
+    sh:property [
+        sh:path ex:pages ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:message "Pages must be a positive integer." ;
+    ] ;
+    sh:property [
+        sh:path ex:ISBN ;
+        sh:datatype xsd:string ;
+        sh:pattern "[0-9]{3}-[0-9]{10}" ;
+        sh:message "ISBN must match the format '###-##########'."
+    ] .
