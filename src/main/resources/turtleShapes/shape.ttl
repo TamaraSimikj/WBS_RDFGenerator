@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:PersonShape
+    rdf:type sh:NodeShape ;
+    sh:targetClass ex:Person ;
+    sh:property [
+        sh:path ex:firstName ;
+        sh:minCount 1 ;
+        sh:message "First name is required." ;
+    ] ;
+    sh:property [
+        sh:path ex:lastName ;
+        sh:minCount 1 ;
+        sh:maxCount 2;
+        sh:message "Last name is required." ;
+    ] ;
+    sh:property [
+        sh:path ex:dateOfBirth ;
+        sh:datatype xsd:date ;
+        sh:message "Date of birth must be in xsd:date format." ;
+    ] ;
+    sh:property [
+    	sh:path ex:age ;
+    	sh:datatype xsd:integer ;
+    	sh:minInclusive 0 ;
+    	sh:maxInclusive 30 ;
+    	] ;
+    sh:property [
+         sh:path ex:lastDateOfEmployment;
+         sh:datatype xsd:date ;
+         sh:minInclusive "2020-01-01"^^xsd:date ;
+        ] ;
+    sh:property [
+        sh:path ex:email ;
+        sh:datatype xsd:string ;
+        sh:message "Email must be a string." ;
+        sh:pattern "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" ;
+    ] ;
+     sh:property [
+            sh:path ex:nickname ;
+            sh:datatype xsd:string ;
+            sh:minCount 2;
+            sh:maxCount 7;
+            sh:minLength 2 ;
+            sh:maxLength  5;
+            sh:message "Random nickname without pattern" ;
+        ] ;
+      sh:property [
+             sh:path ex:SSN ;
+             sh:datatype xsd:string ;
+             sh:pattern "[0-8]\\d{2}-\\d{2}-\\d{4}" ;
+         ] ;
+          sh:property [
+                 sh:path ex:Cousin1Name ;
+                 sh:datatype xsd:string ;
+         ] ;
+           sh:property [
+                 sh:path ex:Cousin2Name  ;
+                 sh:datatype xsd:string ;
+
+         ] ;
+           sh:property [
+                sh:path ex:Cousin1LastName ;
+                sh:equals ex:Cousin2LastName ;    # This ensures that lastName and surname must have the same value
+                sh:datatype xsd:string ;
+             ] ;
+             sh:property [
+                 sh:path ex:property1 ;
+                 sh:disjoint ex:property2 ;
+                 sh:datatype xsd:string ;
+             ] .

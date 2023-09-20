@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://example.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Define a shape that specifies the minimum count condition
+ex:MinCountShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path ex:property ;
+        sh:minCount 1 ;
+    ] .
+
+# Define a shape that specifies the maximum count condition
+ex:MaxCountShape
+    a sh:NodeShape ;
+    sh:property [
+        sh:path ex:property ;
+        sh:maxCount 1 ;
+    ] .
+
+# Define a shape that combines both conditions using sh:and
+ex:AndShape
+    a sh:NodeShape ;
+    sh:and (ex:MinCountShape ex:MaxCountShape) .
